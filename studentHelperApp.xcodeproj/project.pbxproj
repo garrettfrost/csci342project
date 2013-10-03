@@ -19,6 +19,8 @@
 		C2B2080817FDA060001DAD23 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B2080617FDA060001DAD23 /* MainStoryboard_iPhone.storyboard */; };
 		C2B2080B17FDA060001DAD23 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B2080917FDA060001DAD23 /* MainStoryboard_iPad.storyboard */; };
 		C2B2080E17FDA060001DAD23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2080D17FDA060001DAD23 /* ViewController.m */; };
+		C2B2081817FDA990001DAD23 /* StudentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2B2081617FDA990001DAD23 /* StudentModel.xcdatamodeld */; };
+		C2B2081B17FDADBD001DAD23 /* Subjects.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2081A17FDADBD001DAD23 /* Subjects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		C2B2080A17FDA060001DAD23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		C2B2080C17FDA060001DAD23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C2B2080D17FDA060001DAD23 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C2B2081717FDA990001DAD23 /* StudentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentModel.xcdatamodel; sourceTree = "<group>"; };
+		C2B2081917FDADBD001DAD23 /* Subjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subjects.h; sourceTree = "<group>"; };
+		C2B2081A17FDADBD001DAD23 /* Subjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subjects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 		C2B207E217FDA060001DAD23 = {
 			isa = PBXGroup;
 			children = (
+				C2B2081917FDADBD001DAD23 /* Subjects.h */,
+				C2B2081A17FDADBD001DAD23 /* Subjects.m */,
+				C2B2081617FDA990001DAD23 /* StudentModel.xcdatamodeld */,
 				C2B2081517FDA735001DAD23 /* View Controllers */,
 				C2B207F417FDA060001DAD23 /* studentHelperApp */,
 				C2B207ED17FDA060001DAD23 /* Frameworks */,
@@ -188,6 +196,8 @@
 				C2B207FB17FDA060001DAD23 /* main.m in Sources */,
 				C2B207FF17FDA060001DAD23 /* AppDelegate.m in Sources */,
 				C2B2080E17FDA060001DAD23 /* ViewController.m in Sources */,
+				C2B2081817FDA990001DAD23 /* StudentModel.xcdatamodeld in Sources */,
+				C2B2081B17FDADBD001DAD23 /* Subjects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +332,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C2B2081617FDA990001DAD23 /* StudentModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C2B2081717FDA990001DAD23 /* StudentModel.xcdatamodel */,
+			);
+			currentVersion = C2B2081717FDA990001DAD23 /* StudentModel.xcdatamodel */;
+			path = StudentModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C2B207E317FDA060001DAD23 /* Project object */;
 }
