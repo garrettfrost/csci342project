@@ -58,6 +58,7 @@
 		C2B207E217FDA060001DAD23 = {
 			isa = PBXGroup;
 			children = (
+				C2B2081517FDA735001DAD23 /* View Controllers */,
 				C2B207F417FDA060001DAD23 /* studentHelperApp */,
 				C2B207ED17FDA060001DAD23 /* Frameworks */,
 				C2B207EC17FDA060001DAD23 /* Products */,
@@ -108,6 +109,13 @@
 				C2B2080417FDA060001DAD23 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2B2081517FDA735001DAD23 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
