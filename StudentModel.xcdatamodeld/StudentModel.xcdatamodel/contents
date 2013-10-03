@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Assessments" syncable="YES">
+    <entity name="Assessments" representedClassName="Assessments" syncable="YES">
         <attribute name="due" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="mark" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="weighting" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
         <relationship name="assOwnedBySubject" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Subjects" inverseName="assessmentRelationship" inverseEntity="Subjects" syncable="YES"/>
     </entity>
-    <entity name="Classes" syncable="YES">
+    <entity name="Classes" representedClassName="Classes" syncable="YES">
         <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
@@ -22,8 +22,8 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="session" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subjectCode" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="assessmentRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Assessments" inverseName="assOwnedBySubject" inverseEntity="Assessments" syncable="YES"/>
-        <relationship name="classesRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Classes" inverseName="classOwnedBySubject" inverseEntity="Classes" syncable="YES"/>
+        <relationship name="assessmentRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Assessments" inverseName="assOwnedBySubject" inverseEntity="Assessments" syncable="YES"/>
+        <relationship name="classesRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Classes" inverseName="classOwnedBySubject" inverseEntity="Classes" syncable="YES"/>
     </entity>
     <elements>
         <element name="Subjects" positionX="160" positionY="192" width="128" height="165"/>
