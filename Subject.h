@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 
 
-@interface Subjects : NSManagedObject
+@interface Subject : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * subjectCode;
@@ -22,7 +22,7 @@
 @property (nonatomic, retain) NSSet *classesRelationship;
 @end
 
-@interface Subjects (CoreDataGeneratedAccessors)
+@interface Subject (CoreDataGeneratedAccessors)
 
 - (void)addAssessmentRelationshipObject:(NSManagedObject *)value;
 - (void)removeAssessmentRelationshipObject:(NSManagedObject *)value;

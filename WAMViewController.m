@@ -7,6 +7,7 @@
 //
 
 #import "WAMViewController.h"
+#import "Subject.h"
 
 @interface WAMViewController ()
 
@@ -30,6 +31,21 @@
         
     self.sessionsWAMTable.delegate = self;
     self.sessionsWAMTable.dataSource = self;
+    
+    // Get all subjects
+    
+    // Get all subjects for each session
+    
+    // Calculate overall WAM
+    //double overallWAM = [calculateWAMWithSubjects self.subjects];
+    /*
+    NSArray *sessionWAMs = [[NSArray alloc] init];
+    int sessions =
+    for (int i = 0; i < sessions; i++) {
+        [sessionWAMs addObject[calculateWAMWithSubjects sessionSubjects]];
+    }*/
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,6 +86,22 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+}
+
+-(double) calculateWAMWithSubjects:(NSArray *)subjects {
+    double total = 0;
+    double WAM = 0;
+    int totalCPs = 0;
+    
+    // Add up the total subject marks times credit points and total credit points
+    for(int i = 0; i < subjects.count; i++) {
+        total += [((Subject*)[subjects objectAtIndex:i]).mark doubleValue] * [((Subject*)[subjects objectAtIndex:i]).creditPoints doubleValue];
+        totalCPs += [((Subject*)[subjects objectAtIndex:i]).creditPoints integerValue];
+    }
+    
+    WAM = total / totalCPs;
+    
+    return WAM;
 }
 
 @end

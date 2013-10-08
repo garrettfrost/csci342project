@@ -11,5 +11,8 @@
 @interface WAMViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *sessionsWAMTable;
+@property (weak, nonatomic) NSArray *subjects;
+
+-(double) calculateWAMWithSubjects : (NSArray *) subjects;
 
 @end

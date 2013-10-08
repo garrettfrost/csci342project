@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 gf99rjda640. All rights reserved.
 //
 
-#import "Subjects.h"
+#import "Subject.h"
 
 
-@implementation Subjects
+@implementation Subject
 
 @dynamic name;
 @dynamic subjectCode;
