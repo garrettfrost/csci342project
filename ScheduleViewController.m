@@ -118,4 +118,42 @@
      */
 }
 
+- (void)createActionSheet
+{
+    UIActionSheet *tripType;
+    tripType = [[UIActionSheet alloc]init];
+    
+    NSString *actionSheetTitle = @"What would you like to add?"; //Action Sheet Title
+    NSString *other1 = @"Subject";
+    NSString *other2 = @"Assessment";
+    NSString *other3 = @"Class";
+    NSString *cancel = @"Cancel";
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:actionSheetTitle
+                                  delegate:self
+                                  cancelButtonTitle:cancel
+                                  destructiveButtonTitle:nil
+                                  otherButtonTitles:other1, other2, other3, nil];
+    
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+    
+    if ([buttonTitle isEqualToString:@"Subject"])
+    {
+        [self performSegueWithIdentifier:@"schedule_to_add_subject" sender:self];
+    }
+    else if ([buttonTitle isEqualToString:@"Assessment"])
+    {
+        [self performSegueWithIdentifier:@"schedule_to_add_assessment" sender:self];
+    }
+    else if([buttonTitle isEqualToString:@"Class"])
+    {
+        [self performSegueWithIdentifier:@"schedule_to_add_class" sender:self];
+    }
+}
+
 @end

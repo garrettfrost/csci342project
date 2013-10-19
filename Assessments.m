@@ -7,7 +7,7 @@
 //
 
 #import "Assessments.h"
-#import "Subjects.h"
+#import "Subject.h"
 
 
 @implementation Assessments

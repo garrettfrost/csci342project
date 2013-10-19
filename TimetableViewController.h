@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddSubjectViewController.h"
 
-@interface TimetableViewController : UITableViewController
+@interface TimetableViewController : UITableViewController<UIActionSheetDelegate>
+
+- (IBAction)addButtonPressed:(id)sender;
 
 @end

@@ -20,7 +20,6 @@
 		C2B2080B17FDA060001DAD23 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B2080917FDA060001DAD23 /* MainStoryboard_iPad.storyboard */; };
 		C2B2080E17FDA060001DAD23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2080D17FDA060001DAD23 /* ViewController.m */; };
 		C2B2081817FDA990001DAD23 /* StudentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2B2081617FDA990001DAD23 /* StudentModel.xcdatamodeld */; };
-		C2B2081B17FDADBD001DAD23 /* Subjects.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2081A17FDADBD001DAD23 /* Subjects.m */; };
 		C2B2085817FDAF4C001DAD23 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2082017FDAF4C001DAD23 /* MagicalImportFunctions.m */; };
 		C2B2085917FDAF4C001DAD23 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2082217FDAF4C001DAD23 /* NSAttributeDescription+MagicalDataImport.m */; };
 		C2B2085A17FDAF4C001DAD23 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2082417FDAF4C001DAD23 /* NSEntityDescription+MagicalDataImport.m */; };
@@ -54,6 +53,8 @@
 		C2B2088017FDB2AC001DAD23 /* AssessmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2087F17FDB2AC001DAD23 /* AssessmentsViewController.m */; };
 		C2B2088317FDB2BB001DAD23 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2088217FDB2BB001DAD23 /* ScheduleViewController.m */; };
 		C2B2088617FDB333001DAD23 /* WAMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2088517FDB333001DAD23 /* WAMViewController.m */; };
+		C2DDC072180822580075A4BC /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDC071180822580075A4BC /* Subject.m */; };
+		C2DDC075180826200075A4BC /* AddSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDC074180826200075A4BC /* AddSubjectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,8 +76,6 @@
 		C2B2080C17FDA060001DAD23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C2B2080D17FDA060001DAD23 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C2B2081717FDA990001DAD23 /* StudentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentModel.xcdatamodel; sourceTree = "<group>"; };
-		C2B2081917FDADBD001DAD23 /* Subjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subjects.h; sourceTree = "<group>"; };
-		C2B2081A17FDADBD001DAD23 /* Subjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subjects.m; sourceTree = "<group>"; };
 		C2B2081F17FDAF4C001DAD23 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		C2B2082017FDAF4C001DAD23 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		C2B2082117FDAF4C001DAD23 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -144,6 +143,10 @@
 		C2B2088217FDB2BB001DAD23 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		C2B2088417FDB333001DAD23 /* WAMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAMViewController.h; sourceTree = "<group>"; };
 		C2B2088517FDB333001DAD23 /* WAMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAMViewController.m; sourceTree = "<group>"; };
+		C2DDC070180822580075A4BC /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		C2DDC071180822580075A4BC /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+		C2DDC073180826200075A4BC /* AddSubjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSubjectViewController.h; sourceTree = "<group>"; };
+		C2DDC074180826200075A4BC /* AddSubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSubjectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 				C2B2088217FDB2BB001DAD23 /* ScheduleViewController.m */,
 				C2B2088417FDB333001DAD23 /* WAMViewController.h */,
 				C2B2088517FDB333001DAD23 /* WAMViewController.m */,
+				C2DDC073180826200075A4BC /* AddSubjectViewController.h */,
+				C2DDC074180826200075A4BC /* AddSubjectViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -343,8 +348,8 @@
 				C2B2087817FDB059001DAD23 /* Classes.m */,
 				C2B2087417FDB058001DAD23 /* Assessments.h */,
 				C2B2087517FDB058001DAD23 /* Assessments.m */,
-				C2B2081917FDADBD001DAD23 /* Subjects.h */,
-				C2B2081A17FDADBD001DAD23 /* Subjects.m */,
+				C2DDC070180822580075A4BC /* Subject.h */,
+				C2DDC071180822580075A4BC /* Subject.m */,
 				C2B2081617FDA990001DAD23 /* StudentModel.xcdatamodeld */,
 			);
 			name = "Core Data Models";
@@ -421,7 +426,6 @@
 				C2B207FF17FDA060001DAD23 /* AppDelegate.m in Sources */,
 				C2B2080E17FDA060001DAD23 /* ViewController.m in Sources */,
 				C2B2081817FDA990001DAD23 /* StudentModel.xcdatamodeld in Sources */,
-				C2B2081B17FDADBD001DAD23 /* Subjects.m in Sources */,
 				C2B2085817FDAF4C001DAD23 /* MagicalImportFunctions.m in Sources */,
 				C2B2085917FDAF4C001DAD23 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				C2B2085A17FDAF4C001DAD23 /* NSEntityDescription+MagicalDataImport.m in Sources */,
@@ -454,6 +458,8 @@
 				C2B2088017FDB2AC001DAD23 /* AssessmentsViewController.m in Sources */,
 				C2B2088317FDB2BB001DAD23 /* ScheduleViewController.m in Sources */,
 				C2B2088617FDB333001DAD23 /* WAMViewController.m in Sources */,
+				C2DDC072180822580075A4BC /* Subject.m in Sources */,
+				C2DDC075180826200075A4BC /* AddSubjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +592,7 @@
 				C2B2081317FDA060001DAD23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

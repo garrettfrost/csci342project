@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AssessmentsViewController : UITableViewController
+@interface AssessmentsViewController : UITableViewController<UIActionSheetDelegate>
 
 @end

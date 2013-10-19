@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WAMViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface WAMViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *sessionsWAMTable;
 @property (weak, nonatomic) NSArray *subjects;

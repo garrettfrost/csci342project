@@ -7,7 +7,7 @@
 //
 
 #import "Classes.h"
-#import "Subjects.h"
+#import "Subject.h"
 
 
 @implementation Classes
