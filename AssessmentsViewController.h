@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #import "SubjectSelectionViewController.h"
 #import "AssessmentDetailsViewController.h"
 
@@ -17,4 +18,9 @@
 @property(retain, nonatomic)NSMutableArray *assessments, *complete, *incomplete;
 
 - (IBAction)addButtonPressed:(id)sender;
+=======
+
+@interface AssessmentsViewController : UITableViewController<UIActionSheetDelegate>
+
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 @end

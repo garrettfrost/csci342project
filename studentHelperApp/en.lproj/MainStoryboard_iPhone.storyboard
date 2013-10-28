@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="h7h-N1-KMN">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="h7h-N1-KMN">
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+<<<<<<< HEAD
         <!--Timetable View Controller - What's On Today-->
+=======
+        <!--Timetable View Controller-->
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         <scene sceneID="k4S-0E-bi6">
             <objects>
                 <tableViewController id="ZBc-yv-KTS" customClass="TimetableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MNl-0G-hBe">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="ENP-sm-p4u" detailTextLabel="Fas-bf-zGs" style="IBUITableViewCellStyleValue1" id="HfE-Dw-g4V">
+=======
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="HfE-Dw-g4V">
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENP-sm-p4u">
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -31,6 +46,8 @@
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
@@ -40,7 +57,11 @@
                             <outlet property="delegate" destination="ZBc-yv-KTS" id="hHc-SF-38A"/>
                         </connections>
                     </tableView>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="What's On Today" id="Lq4-EW-3KZ">
+=======
+                    <navigationItem key="navigationItem" id="Lq4-EW-3KZ">
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XbW-pb-DBc">
                             <connections>
                                 <action selector="addButtonPressed:" destination="ZBc-yv-KTS" id="PYs-hI-hdK"/>
@@ -48,14 +69,24 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+<<<<<<< HEAD
                         <segue destination="eql-Pb-XGk" kind="push" identifier="timetable_to_subject_select_segue" id="PTI-Bp-frb"/>
                         <segue destination="ss4-V8-tu5" kind="push" identifier="timetable_to_add_subject_segue" id="ley-c3-ZD6"/>
                         <segue destination="bEu-sd-5Kk" kind="push" identifier="timetable_to_add_current_session_segue" id="tgs-nr-w3z"/>
+=======
+                        <segue destination="fOi-vB-SCy" kind="modal" identifier="timetable_to_add_assessment" id="KUk-56-7aS"/>
+                        <segue destination="TxT-hO-W8H" kind="modal" identifier="timetable_to_add_class" id="NFz-ij-AuQ"/>
+                        <segue destination="ss4-V8-tu5" kind="push" identifier="timetable_to_add_subject" id="fT0-sN-Vvl"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCn-oO-gOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-4174" y="342"/>
+=======
+            <point key="canvasLocation" x="-4354" y="-438"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tZ5-7t-NGi">
@@ -76,23 +107,36 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ON4-3k-d8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-5710" y="1365"/>
         </scene>
         <!--Assessments View Controller - Assessments-->
+=======
+            <point key="canvasLocation" x="-5890" y="590"/>
+        </scene>
+        <!--Assessments View Controller-->
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         <scene sceneID="Vj6-yM-V8B">
             <objects>
                 <tableViewController id="t3M-pC-fd7" customClass="AssessmentsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="unG-HP-dXO">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="assessment" textLabel="yjA-hu-eDL" detailTextLabel="W0t-dq-bva" style="IBUITableViewCellStyleValue1" id="qk8-4y-R5b">
+=======
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qk8-4y-R5b">
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjA-hu-eDL">
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -105,6 +149,8 @@
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
@@ -114,6 +160,7 @@
                             <outlet property="delegate" destination="t3M-pC-fd7" id="7gl-Jz-3LK"/>
                         </connections>
                     </tableView>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Assessments" id="sPt-UY-36j">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xD6-51-Jc3">
                             <connections>
@@ -126,10 +173,21 @@
                         <segue destination="ss4-V8-tu5" kind="push" identifier="assessments_to_add_subject_segue" id="lAB-aq-1SG"/>
                         <segue destination="WyL-q1-DvD" kind="push" identifier="view_assessment_segue" id="7FO-BD-fhn"/>
                         <segue destination="bEu-sd-5Kk" kind="push" identifier="assessments_to_add_current_session_segue" id="nLv-lO-oUU"/>
+=======
+                    <navigationItem key="navigationItem" id="sPt-UY-36j">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xD6-51-Jc3"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="WyL-q1-DvD" kind="push" identifier="assessment_to_assessment_details" id="mlO-nh-j4b"/>
+                        <segue destination="fOi-vB-SCy" kind="modal" identifier="assessment_to_add_assessment" id="n7e-Wv-Wru"/>
+                        <segue destination="TxT-hO-W8H" kind="modal" identifier="assessment_to_add_class" id="CuL-Zx-eYB"/>
+                        <segue destination="ss4-V8-tu5" kind="push" identifier="assessment_to_add_subject" id="dJv-kk-6Ur"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtf-Yc-Fwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-4174" y="1023"/>
         </scene>
         <!--Subject Selection View Controller - Subject Selection-->
@@ -180,20 +238,32 @@
             <point key="canvasLocation" x="-2371" y="1181"/>
         </scene>
         <!--Schedule View Controller - Uni Schedule-->
+=======
+            <point key="canvasLocation" x="-4354" y="248"/>
+        </scene>
+        <!--Schedule View Controller-->
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         <scene sceneID="sZI-dT-U6j">
             <objects>
                 <tableViewController id="GAf-Me-gl8" customClass="ScheduleViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wzE-sW-A59">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="schedule" textLabel="Tba-1n-L9U" detailTextLabel="vQj-TE-uaN" style="IBUITableViewCellStyleValue1" id="hkm-L3-lsN">
+=======
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hkm-L3-lsN">
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+<<<<<<< HEAD
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tba-1n-L9U">
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -206,6 +276,8 @@
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
@@ -215,6 +287,7 @@
                             <outlet property="delegate" destination="GAf-Me-gl8" id="JlW-gs-hkC"/>
                         </connections>
                     </tableView>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Uni Schedule" id="1VY-Ti-cKd">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AkJ-jg-JXr">
                             <connections>
@@ -227,10 +300,21 @@
                         <segue destination="dX7-D1-dFp" kind="push" identifier="schedule_to_subject_detail_segue" id="kzM-Hc-wc3"/>
                         <segue destination="ss4-V8-tu5" kind="push" identifier="schedule_to_add_subject_segue" id="6DG-l9-hv8"/>
                         <segue destination="bEu-sd-5Kk" kind="push" identifier="schedule_to_add_current_session_segue" id="pS2-cb-2iL"/>
+=======
+                    <navigationItem key="navigationItem" id="1VY-Ti-cKd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AkJ-jg-JXr"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="dX7-D1-dFp" kind="push" identifier="schedule_to_schedule_details" id="Jj1-As-ngJ"/>
+                        <segue destination="fOi-vB-SCy" kind="modal" identifier="schedule_to_add_assessment" id="eV0-dZ-k4A"/>
+                        <segue destination="TxT-hO-W8H" kind="modal" identifier="schedule_to_add_class" id="kcl-6j-xhL"/>
+                        <segue destination="ss4-V8-tu5" kind="push" identifier="schedule_to_add_subject" id="beN-01-pHt"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGW-AP-Q30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-4174" y="1719"/>
         </scene>
         <!--Subject View Controller - Subject Details-->
@@ -731,6 +815,69 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zk-et-YtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1923" y="839"/>
+=======
+            <point key="canvasLocation" x="-4354" y="944"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="S6B-tb-H1O">
+            <objects>
+                <viewController id="dX7-D1-dFp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zzy-7Q-9xu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="50r-gI-BCP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bua-dZ-HAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2897" y="2392"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c8J-5f-dEe">
+            <objects>
+                <viewController id="TxT-hO-W8H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aqu-oT-fkx">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqp-ne-DL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2287" y="1396"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IN6-iW-908">
+            <objects>
+                <viewController id="WyL-q1-DvD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="84c-si-MaJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Btr-Br-Qxl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D0H-cj-VjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3021" y="-960"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M2F-ct-hYb">
+            <objects>
+                <viewController id="fOi-vB-SCy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gqx-AN-Ae4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zk-et-YtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2287" y="704"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         </scene>
         <!--Add Subject View Controller - Add Subject-->
         <scene sceneID="bZ2-V9-L1K">
@@ -751,6 +898,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Subject Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka7-kR-C8X">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="112" id="D4O-xz-bXD"/>
+<<<<<<< HEAD
                                     <constraint firstAttribute="height" constant="21" id="hwm-HV-wCz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DKCrayonCrumble" family="DK Crayon Crumble" pointSize="17"/>
@@ -773,6 +921,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DKCrayonCrumble" family="DK Crayon Crumble" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+=======
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Subject Code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFl-qg-A5C">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Session:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9z2-Ab-bOb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b59-gE-EXJ">
@@ -785,12 +948,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Credit Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2g-o3-QFT">
+<<<<<<< HEAD
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="18T-B9-4Sj"/>
                                     <constraint firstAttribute="width" constant="103" id="XJJ-bG-LQb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DKCrayonCrumble" family="DK Crayon Crumble" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+=======
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -800,6 +968,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <constraint firstItem="r3L-yx-3Ta" firstAttribute="leading" secondItem="Lag-5c-BIh" secondAttribute="leading" type="default" id="2NV-rV-5wv"/>
                             <constraint firstItem="Pea-o6-hUP" firstAttribute="top" secondItem="JU7-d0-LMp" secondAttribute="top" constant="20" symbolic="YES" type="default" id="5jM-fR-6ey"/>
                             <constraint firstItem="o2g-o3-QFT" firstAttribute="top" secondItem="r3L-yx-3Ta" secondAttribute="top" type="default" id="9kA-sJ-Pbq"/>
+<<<<<<< HEAD
                             <constraint firstItem="b59-gE-EXJ" firstAttribute="leading" secondItem="JU7-d0-LMp" secondAttribute="leading" type="default" id="CFb-uv-fU9"/>
                             <constraint firstItem="Lag-5c-BIh" firstAttribute="top" secondItem="Pea-o6-hUP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Q9H-BZ-ETr"/>
                             <constraint firstItem="9z2-Ab-bOb" firstAttribute="top" secondItem="JU7-d0-LMp" secondAttribute="top" constant="151" id="R9S-Iq-cEb"/>
@@ -814,6 +983,22 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <constraint firstItem="b59-gE-EXJ" firstAttribute="trailing" secondItem="JU7-d0-LMp" secondAttribute="trailing" type="default" id="vM7-vz-aOf"/>
                             <constraint firstItem="b59-gE-EXJ" firstAttribute="bottom" secondItem="JU7-d0-LMp" secondAttribute="bottom" type="default" id="x4z-d4-Ed5"/>
                             <constraint firstItem="fFl-qg-A5C" firstAttribute="top" secondItem="Lag-5c-BIh" secondAttribute="top" type="default" id="xXS-kn-uI8"/>
+=======
+                            <constraint firstItem="Lag-5c-BIh" firstAttribute="top" secondItem="Pea-o6-hUP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Q9H-BZ-ETr"/>
+                            <constraint firstItem="ka7-kR-C8X" firstAttribute="leading" secondItem="JU7-d0-LMp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SoA-Df-1I4"/>
+                            <constraint firstAttribute="bottom" secondItem="b59-gE-EXJ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="T3g-gA-b3j"/>
+                            <constraint firstItem="fFl-qg-A5C" firstAttribute="leading" secondItem="JU7-d0-LMp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="W9b-Og-TDN"/>
+                            <constraint firstItem="ka7-kR-C8X" firstAttribute="top" secondItem="JU7-d0-LMp" secondAttribute="top" constant="20" symbolic="YES" type="default" id="YE9-xA-VSW"/>
+                            <constraint firstItem="Lag-5c-BIh" firstAttribute="leading" secondItem="Pea-o6-hUP" secondAttribute="leading" type="default" id="Z7e-hM-XR5"/>
+                            <constraint firstItem="fFl-qg-A5C" firstAttribute="top" secondItem="Lag-5c-BIh" secondAttribute="top" type="default" id="f4d-a4-F4h"/>
+                            <constraint firstItem="o2g-o3-QFT" firstAttribute="leading" secondItem="JU7-d0-LMp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="i5W-NI-fGj"/>
+                            <constraint firstAttribute="trailing" secondItem="Lag-5c-BIh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="l38-JQ-32u"/>
+                            <constraint firstItem="b59-gE-EXJ" firstAttribute="leading" secondItem="JU7-d0-LMp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oUV-yV-m9q"/>
+                            <constraint firstAttribute="trailing" secondItem="b59-gE-EXJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="qhr-X8-EJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="Pea-o6-hUP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="svO-wZ-Oao"/>
+                            <constraint firstAttribute="trailing" secondItem="r3L-yx-3Ta" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="thb-pO-8em"/>
+                            <constraint firstItem="b59-gE-EXJ" firstAttribute="top" secondItem="9z2-Ab-bOb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="y8r-Vd-16E"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                             <constraint firstItem="r3L-yx-3Ta" firstAttribute="top" secondItem="Lag-5c-BIh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zfq-RK-dOb"/>
                             <constraint firstItem="9z2-Ab-bOb" firstAttribute="leading" secondItem="JU7-d0-LMp" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zgp-NL-Hye"/>
                         </constraints>
@@ -829,6 +1014,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="creditPointsField" destination="r3L-yx-3Ta" id="uRK-sj-kFM"/>
+<<<<<<< HEAD
                         <outlet property="creditPointsLabel" destination="o2g-o3-QFT" id="QNy-0S-uW4"/>
                         <outlet property="sessionLabel" destination="9z2-Ab-bOb" id="gXs-z8-Y2Q"/>
                         <outlet property="sessionPicker" destination="b59-gE-EXJ" id="qnR-LI-HQH"/>
@@ -836,13 +1022,24 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="subjectCodeLabel" destination="fFl-qg-A5C" id="tzF-Xw-gez"/>
                         <outlet property="subjectNameField" destination="Pea-o6-hUP" id="VWU-Me-L4D"/>
                         <outlet property="subjectNameLabel" destination="ka7-kR-C8X" id="97f-b7-U07"/>
+=======
+                        <outlet property="sessionPicker" destination="b59-gE-EXJ" id="qnR-LI-HQH"/>
+                        <outlet property="subjectCodeField" destination="Lag-5c-BIh" id="vRx-5W-7ky"/>
+                        <outlet property="subjectNameField" destination="Pea-o6-hUP" id="VWU-Me-L4D"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eoe-ca-zX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-1947" y="-42"/>
         </scene>
         <!--View Controller - WAM Calculator-->
+=======
+            <point key="canvasLocation" x="-2287" y="55"/>
+        </scene>
+        <!--View Controller-->
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         <scene sceneID="3Cx-cK-Co3">
             <objects>
                 <viewController id="zu0-Ao-VtY" customClass="WAMViewController" sceneMemberID="viewController">
@@ -851,9 +1048,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v4F-YM-rgs">
+<<<<<<< HEAD
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="cgb-WW-NNN"/>
+=======
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="DQY-NQ-Py9"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="wamCell" textLabel="JXq-EA-UAc" detailTextLabel="jH5-Cx-0mt" style="IBUITableViewCellStyleValue1" id="XI9-QE-V7r">
@@ -879,6 +1082,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+<<<<<<< HEAD
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="WAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9G-tZ-tiE">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="ihw-vF-lHN"/>
@@ -923,17 +1127,43 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <segue destination="eql-Pb-XGk" kind="push" identifier="wam_to_subject_select_segue" id="hsB-KY-el0"/>
                         <segue destination="ss4-V8-tu5" kind="push" identifier="WAM_to_add_subject_segue" id="eec-6Q-CsP"/>
                         <segue destination="bEu-sd-5Kk" kind="push" identifier="WAM_to_add_current_session_segue" id="gGe-Yw-7Yc"/>
+=======
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v4F-YM-rgs" firstAttribute="bottom" secondItem="fY8-I2-Uj3" secondAttribute="bottom" type="default" id="B0v-0g-jYp"/>
+                            <constraint firstItem="v4F-YM-rgs" firstAttribute="trailing" secondItem="fY8-I2-Uj3" secondAttribute="trailing" type="default" id="Sb2-aP-Mc8"/>
+                            <constraint firstItem="v4F-YM-rgs" firstAttribute="leading" secondItem="fY8-I2-Uj3" secondAttribute="leading" type="default" id="bu6-xE-Gqp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jax-Uf-O6u">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KKv-Yq-mZu"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sessionsWAMTable" destination="v4F-YM-rgs" id="du1-Id-OuY"/>
+                        <segue destination="fOi-vB-SCy" kind="modal" identifier="wam_to_add_assessment" id="BEs-ZP-cee"/>
+                        <segue destination="TxT-hO-W8H" kind="modal" identifier="wam_to_add_class" id="HfM-Vf-hWX"/>
+                        <segue destination="ss4-V8-tu5" kind="push" identifier="wam_to_add_subject" id="eck-Ou-oh7"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhP-5z-6Fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-4174" y="2392"/>
+=======
+            <point key="canvasLocation" x="-4354" y="1617"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         </scene>
         <!--Navigation Controller - Timetable-->
         <scene sceneID="qVn-W5-csX">
             <objects>
                 <navigationController id="jNw-OQ-mZX" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="Timetable" image="appbar.calendar.14-1.png" id="4VS-Ik-bn0"/>
+=======
+                    <tabBarItem key="tabBarItem" title="Timetable" id="4VS-Ik-bn0"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BtJ-dL-K9N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -946,13 +1176,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KvP-Af-ZLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-4700" y="337"/>
+=======
+            <point key="canvasLocation" x="-4880" y="-438"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         </scene>
         <!--Navigation Controller - Assessments-->
         <scene sceneID="AxD-yp-pnv">
             <objects>
                 <navigationController id="rwW-ec-8rJ" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="Assessments" image="appbar.checkmark.pencil.png" id="PKo-04-6zV"/>
+=======
+                    <tabBarItem key="tabBarItem" title="Assessments" id="PKo-04-6zV"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wwo-bB-Dcj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -965,13 +1203,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXH-ZC-mT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-4700" y="1023"/>
+=======
+            <point key="canvasLocation" x="-4880" y="248"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         </scene>
         <!--Navigation Controller - Schedule-->
         <scene sceneID="bj1-je-O0B">
             <objects>
                 <navigationController id="5J4-aZ-JWa" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="Schedule" image="appbar.clipboard-1.png" id="DCF-Iv-2cA"/>
+=======
+                    <tabBarItem key="tabBarItem" title="Schedule" id="DCF-Iv-2cA"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TjN-Sv-OPg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -984,13 +1230,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Lb-SS-Bfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-4700" y="1719"/>
+=======
+            <point key="canvasLocation" x="-4880" y="944"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         </scene>
         <!--Navigation Controller - WAM-->
         <scene sceneID="z2d-uS-WAM">
             <objects>
                 <navigationController id="Jt8-b2-GUa" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="WAM" image="appbar.calculator-1.png" id="W4N-VU-X5n"/>
+=======
+                    <tabBarItem key="tabBarItem" title="WAM" id="W4N-VU-X5n"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cfQ-cT-1eG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1003,6 +1257,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFF-2a-ZIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-4700" y="2392"/>
         </scene>
     </scenes>
@@ -1041,10 +1296,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="startTimePicker" candidateClass="UIDatePicker"/>
             </relationships>
         </class>
+=======
+            <point key="canvasLocation" x="-4880" y="1617"/>
+        </scene>
+    </scenes>
+    <classes>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         <class className="AddSubjectViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AddSubjectViewController.h"/>
             <relationships>
                 <relationship kind="action" name="doneButtonPressed:"/>
+<<<<<<< HEAD
                 <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="creditPointsField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="creditPointsLabel" candidateClass="UILabel"/>
@@ -1067,10 +1329,18 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="markView" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="subjectView" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="weightView" candidateClass="UILabel"/>
+=======
+                <relationship kind="outlet" name="creditPointsField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="doneButtonPressed" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="sessionPicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="subjectCodeField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="subjectNameField" candidateClass="UITextField"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
             </relationships>
         </class>
         <class className="AssessmentsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AssessmentsViewController.h"/>
+<<<<<<< HEAD
             <relationships>
                 <relationship kind="action" name="addButtonPressed:"/>
             </relationships>
@@ -1082,12 +1352,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="currentSessionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="sessionPicker" candidateClass="UIPickerView"/>
             </relationships>
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="ScheduleViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleViewController.h"/>
+<<<<<<< HEAD
             <relationships>
                 <relationship kind="action" name="addButtonPressed:"/>
             </relationships>
@@ -1104,6 +1377,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="subjectTable" candidateClass="UITableView"/>
             </relationships>
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         </class>
         <class className="TimetableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TimetableViewController.h"/>
@@ -1114,10 +1389,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="WAMViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WAMViewController.h"/>
             <relationships>
+<<<<<<< HEAD
                 <relationship kind="action" name="addButtonPressed:"/>
                 <relationship kind="outlet" name="WAMText" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="sessionsWAMTable" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="wamValueLabel" candidateClass="UILabel"/>
+=======
+                <relationship kind="outlet" name="sessionsWAMTable" candidateClass="UITableView"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
             </relationships>
         </class>
     </classes>
@@ -1127,8 +1406,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="hsB-KY-el0"/>
         <segue reference="gGe-Yw-7Yc"/>
         <segue reference="eec-6Q-CsP"/>
+=======
+        <segue reference="eck-Ou-oh7"/>
+        <segue reference="BEs-ZP-cee"/>
+        <segue reference="HfM-Vf-hWX"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     </inferredMetricsTieBreakers>
 </document>

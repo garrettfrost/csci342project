@@ -7,7 +7,11 @@
 //
 
 #import "WAMViewController.h"
+<<<<<<< HEAD
 #import "Subjects.h"
+=======
+#import "Subject.h"
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 
 @interface WAMViewController ()
 
@@ -28,6 +32,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+<<<<<<< HEAD
     
     UIImageView *background = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Chalkboard-background.jpg"]];
     [self.view addSubview:background];
@@ -85,6 +90,28 @@
     [self.sessionsWAMTable reloadData];
 }
 
+=======
+        
+    self.sessionsWAMTable.delegate = self;
+    self.sessionsWAMTable.dataSource = self;
+    
+    // Get all subjects
+    
+    // Get all subjects for each session
+    
+    // Calculate overall WAM
+    //double overallWAM = [calculateWAMWithSubjects self.subjects];
+    /*
+    NSArray *sessionWAMs = [[NSArray alloc] init];
+    int sessions =
+    for (int i = 0; i < sessions; i++) {
+        [sessionWAMs addObject[calculateWAMWithSubjects sessionSubjects]];
+    }*/
+    
+    
+}
+
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -94,13 +121,21 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
+<<<<<<< HEAD
     return 1;
+=======
+    return 4;
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+<<<<<<< HEAD
     return self.sessionsArray.count;
+=======
+    return 2;
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -108,6 +143,7 @@
     NSString *CellIdentifier = @"wamCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+<<<<<<< HEAD
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.detailTextLabel.textColor = [UIColor whiteColor];
     cell.textLabel.font = [UIFont fontWithName:@"DK Crayon Crumble" size:19.0];
@@ -118,6 +154,10 @@
     // Configure the cell...
     cell.textLabel.text = s.sessionName;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%0.1f", s.WAM];
+=======
+    // Configure the cell...
+    cell.textLabel.text = @"test";
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     
     return cell;
 }
@@ -140,8 +180,13 @@
     
     // Add up the total subject marks times credit points and total credit points
     for(int i = 0; i < subjects.count; i++) {
+<<<<<<< HEAD
         total += [((Subjects*)[subjects objectAtIndex:i]).mark doubleValue] * [((Subjects*)[subjects objectAtIndex:i]).creditPoints doubleValue];
         totalCPs += [((Subjects*)[subjects objectAtIndex:i]).creditPoints integerValue];
+=======
+        total += [((Subject*)[subjects objectAtIndex:i]).mark doubleValue] * [((Subject*)[subjects objectAtIndex:i]).creditPoints doubleValue];
+        totalCPs += [((Subject*)[subjects objectAtIndex:i]).creditPoints integerValue];
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     }
     
     WAM = total / totalCPs;
@@ -149,11 +194,14 @@
     return WAM;
 }
 
+<<<<<<< HEAD
 - (IBAction)addButtonPressed:(id)sender
 {
     [self createActionSheet];
 }
 
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 - (void)createActionSheet
 {
     UIActionSheet *tripType;
@@ -163,14 +211,21 @@
     NSString *other1 = @"Subject";
     NSString *other2 = @"Assessment";
     NSString *other3 = @"Class";
+<<<<<<< HEAD
     NSString *other4 = @"Current Session";
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     NSString *cancel = @"Cancel";
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
                                   initWithTitle:actionSheetTitle
                                   delegate:self
                                   cancelButtonTitle:cancel
                                   destructiveButtonTitle:nil
+<<<<<<< HEAD
                                   otherButtonTitles:other1, other2, other3, other4, nil];
+=======
+                                  otherButtonTitles:other1, other2, other3, nil];
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
@@ -179,6 +234,7 @@
 {
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     
+<<<<<<< HEAD
     if ([buttonTitle isEqualToString:@"Assessment"])
     {
         self.isAssessment = true;
@@ -209,6 +265,19 @@
         dest.hidesBottomBarWhenPushed = YES;
         dest.isAssessment = self.isAssessment;
         dest.isClass = self.isClass;
+=======
+    if ([buttonTitle isEqualToString:@"Subject"])
+    {
+        [self performSegueWithIdentifier:@"wam_to_add_subject" sender:self];
+    }
+    else if ([buttonTitle isEqualToString:@"Assessment"])
+    {
+        [self performSegueWithIdentifier:@"wam_to_add_assessment" sender:self];
+    }
+    else if([buttonTitle isEqualToString:@"Class"])
+    {
+        [self performSegueWithIdentifier:@"wam_to_add_class" sender:self];
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     }
 }
 

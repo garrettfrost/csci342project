@@ -34,6 +34,7 @@
     self.subjectNameField.delegate = self;
     self.subjectCodeField.delegate = self;
     self.creditPointsField.delegate = self;
+<<<<<<< HEAD
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:@"UITextFieldTextDidChangeNotification" object:self.subjectNameField];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:@"UITextFieldTextDidChangeNotification" object:self.subjectCodeField];
@@ -47,6 +48,8 @@
     self.background = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Chalkboard-background.jpg"]];
     [self.view addSubview:self.background];
     [self.view sendSubviewToBack:self.background];
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,6 +90,7 @@
 - (BOOL) textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
+<<<<<<< HEAD
     
     if([textField tag] == 0)
     {
@@ -150,5 +154,27 @@
         
         [self.navigationController popToRootViewControllerAnimated:YES];
     }
+=======
+//    [self.subjectCodeField resignFirstResponder];
+//    [self.creditPointsField resignFirstResponder];
+
+    return YES;
+}
+
+- (IBAction)doneButtonPressed:(id)sender
+{
+    self.subjectToAdd = [Subject MR_createEntity];
+    
+    self.subjectToAdd.name = self.subjectNameField.text;
+    self.subjectToAdd.subjectCode = self.subjectCodeField.text;
+    self.subjectToAdd.session = self.session;
+    self.subjectToAdd.creditPoints = numberFromString(self.creditPointsField.text);
+    self.subjectToAdd.mark = 0;
+    self.subjectToAdd.completed = FALSE;
+    
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 @end

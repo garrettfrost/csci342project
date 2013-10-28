@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		949BF10A181C929300E326B7 /* Chalkboard-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 949BF109181C929300E326B7 /* Chalkboard-background.jpg */; };
 		949BF110181C9D2900E326B7 /* AssessmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949BF10F181C9D2900E326B7 /* AssessmentDetailsViewController.m */; };
 		949BF113181CF61E00E326B7 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 949BF112181CF61E00E326B7 /* Session.m */; };
@@ -23,6 +24,8 @@
 		C22A687C1813FFE100AFCBDE /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = C22A687B1813FFE100AFCBDE /* Classes.m */; };
 		C22A687F1814117F00AFCBDE /* SubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C22A687E1814117F00AFCBDE /* SubjectViewController.m */; };
 		C22A6882181411B400AFCBDE /* Assessments.m in Sources */ = {isa = PBXBuildFile; fileRef = C22A6881181411B400AFCBDE /* Assessments.m */; };
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 		C2B207EF17FDA060001DAD23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B207EE17FDA060001DAD23 /* UIKit.framework */; };
 		C2B207F117FDA060001DAD23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B207F017FDA060001DAD23 /* Foundation.framework */; };
 		C2B207F317FDA060001DAD23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B207F217FDA060001DAD23 /* CoreGraphics.framework */; };
@@ -63,10 +66,16 @@
 		C2B2087017FDAF4C001DAD23 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2085317FDAF4C001DAD23 /* MagicalRecord+ShorthandSupport.m */; };
 		C2B2087117FDAF4C001DAD23 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2085517FDAF4C001DAD23 /* MagicalRecord.m */; };
 		C2B2087317FDAF78001DAD23 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B2087217FDAF78001DAD23 /* CoreData.framework */; };
+<<<<<<< HEAD
+=======
+		C2B2087617FDB058001DAD23 /* Assessments.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2087517FDB058001DAD23 /* Assessments.m */; };
+		C2B2087917FDB059001DAD23 /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2087817FDB059001DAD23 /* Classes.m */; };
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 		C2B2087D17FDB29D001DAD23 /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2087C17FDB29D001DAD23 /* TimetableViewController.m */; };
 		C2B2088017FDB2AC001DAD23 /* AssessmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2087F17FDB2AC001DAD23 /* AssessmentsViewController.m */; };
 		C2B2088317FDB2BB001DAD23 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2088217FDB2BB001DAD23 /* ScheduleViewController.m */; };
 		C2B2088617FDB333001DAD23 /* WAMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B2088517FDB333001DAD23 /* WAMViewController.m */; };
+<<<<<<< HEAD
 		C2DDC075180826200075A4BC /* AddSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDC074180826200075A4BC /* AddSubjectViewController.m */; };
 		D138E792181DCDB500FB9399 /* DK Crayon Crumble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 949BF11A181D380D00E326B7 /* DK Crayon Crumble.ttf */; };
 /* End PBXBuildFile section */
@@ -100,6 +109,13 @@
 		C22A687E1814117F00AFCBDE /* SubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectViewController.m; sourceTree = "<group>"; };
 		C22A6880181411B400AFCBDE /* Assessments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assessments.h; sourceTree = "<group>"; };
 		C22A6881181411B400AFCBDE /* Assessments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assessments.m; sourceTree = "<group>"; };
+=======
+		C2DDC072180822580075A4BC /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDC071180822580075A4BC /* Subject.m */; };
+		C2DDC075180826200075A4BC /* AddSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DDC074180826200075A4BC /* AddSubjectViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 		C2B207EB17FDA060001DAD23 /* studentHelperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studentHelperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B207EE17FDA060001DAD23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C2B207F017FDA060001DAD23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -173,6 +189,13 @@
 		C2B2085617FDAF4C001DAD23 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		C2B2085717FDAF4C001DAD23 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		C2B2087217FDAF78001DAD23 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+<<<<<<< HEAD
+=======
+		C2B2087417FDB058001DAD23 /* Assessments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assessments.h; sourceTree = "<group>"; };
+		C2B2087517FDB058001DAD23 /* Assessments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assessments.m; sourceTree = "<group>"; };
+		C2B2087717FDB059001DAD23 /* Classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes.h; sourceTree = "<group>"; };
+		C2B2087817FDB059001DAD23 /* Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classes.m; sourceTree = "<group>"; };
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 		C2B2087B17FDB29D001DAD23 /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimetableViewController.h; sourceTree = "<group>"; };
 		C2B2087C17FDB29D001DAD23 /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimetableViewController.m; sourceTree = "<group>"; };
 		C2B2087E17FDB2AC001DAD23 /* AssessmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssessmentsViewController.h; sourceTree = "<group>"; };
@@ -181,6 +204,11 @@
 		C2B2088217FDB2BB001DAD23 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		C2B2088417FDB333001DAD23 /* WAMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAMViewController.h; sourceTree = "<group>"; };
 		C2B2088517FDB333001DAD23 /* WAMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAMViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		C2DDC070180822580075A4BC /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		C2DDC071180822580075A4BC /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 		C2DDC073180826200075A4BC /* AddSubjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSubjectViewController.h; sourceTree = "<group>"; };
 		C2DDC074180826200075A4BC /* AddSubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSubjectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,12 +276,15 @@
 		C2B207F517FDA060001DAD23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				949BF11A181D380D00E326B7 /* DK Crayon Crumble.ttf */,
 				949BF11B181D3FF700E326B7 /* appbar.calculator-1.png */,
 				949BF11C181D3FF700E326B7 /* appbar.calendar.14-1.png */,
 				949BF11D181D3FF700E326B7 /* appbar.checkmark.pencil.png */,
 				949BF11E181D3FF700E326B7 /* appbar.clipboard-1.png */,
 				949BF109181C929300E326B7 /* Chalkboard-background.jpg */,
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 				C2B207F617FDA060001DAD23 /* studentHelperApp-Info.plist */,
 				C2B207F717FDA060001DAD23 /* InfoPlist.strings */,
 				C2B207FA17FDA060001DAD23 /* main.m */,
@@ -268,8 +299,11 @@
 		C2B2081517FDA735001DAD23 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				C22A687D1814117F00AFCBDE /* SubjectViewController.h */,
 				C22A687E1814117F00AFCBDE /* SubjectViewController.m */,
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 				C2B2087B17FDB29D001DAD23 /* TimetableViewController.h */,
 				C2B2087C17FDB29D001DAD23 /* TimetableViewController.m */,
 				C2B2087E17FDB2AC001DAD23 /* AssessmentsViewController.h */,
@@ -280,6 +314,7 @@
 				C2B2088517FDB333001DAD23 /* WAMViewController.m */,
 				C2DDC073180826200075A4BC /* AddSubjectViewController.h */,
 				C2DDC074180826200075A4BC /* AddSubjectViewController.m */,
+<<<<<<< HEAD
 				C22A685F1813D48100AFCBDE /* AddAssessmentViewController.h */,
 				C22A68601813D48100AFCBDE /* AddAssessmentViewController.m */,
 				C22A68621813D51E00AFCBDE /* AddClassViewController.h */,
@@ -290,6 +325,8 @@
 				949BF10F181C9D2900E326B7 /* AssessmentDetailsViewController.m */,
 				949BF114181D0B1200E326B7 /* CurrentSessionViewController.h */,
 				949BF115181D0B1200E326B7 /* CurrentSessionViewController.m */,
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -398,6 +435,7 @@
 		C2B2087A17FDB0A9001DAD23 /* Core Data Models */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				C2B2081617FDA990001DAD23 /* StudentModel.xcdatamodeld */,
 				C22A687A1813FFE100AFCBDE /* Classes.h */,
 				C22A687B1813FFE100AFCBDE /* Classes.m */,
@@ -409,6 +447,15 @@
 				949BF112181CF61E00E326B7 /* Session.m */,
 				949BF117181D216B00E326B7 /* CurrentSession.h */,
 				949BF118181D216B00E326B7 /* CurrentSession.m */,
+=======
+				C2B2087717FDB059001DAD23 /* Classes.h */,
+				C2B2087817FDB059001DAD23 /* Classes.m */,
+				C2B2087417FDB058001DAD23 /* Assessments.h */,
+				C2B2087517FDB058001DAD23 /* Assessments.m */,
+				C2DDC070180822580075A4BC /* Subject.h */,
+				C2DDC071180822580075A4BC /* Subject.m */,
+				C2B2081617FDA990001DAD23 /* StudentModel.xcdatamodeld */,
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 			);
 			name = "Core Data Models";
 			sourceTree = "<group>";
@@ -470,12 +517,15 @@
 				C2B2080517FDA060001DAD23 /* Default-568h@2x.png in Resources */,
 				C2B2080817FDA060001DAD23 /* MainStoryboard_iPhone.storyboard in Resources */,
 				C2B2080B17FDA060001DAD23 /* MainStoryboard_iPad.storyboard in Resources */,
+<<<<<<< HEAD
 				949BF10A181C929300E326B7 /* Chalkboard-background.jpg in Resources */,
 				949BF11F181D3FF700E326B7 /* appbar.calculator-1.png in Resources */,
 				949BF120181D3FF700E326B7 /* appbar.calendar.14-1.png in Resources */,
 				949BF121181D3FF700E326B7 /* appbar.checkmark.pencil.png in Resources */,
 				949BF122181D3FF700E326B7 /* appbar.clipboard-1.png in Resources */,
 				D138E792181DCDB500FB9399 /* DK Crayon Crumble.ttf in Resources */,
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,10 +566,16 @@
 				C2B2086F17FDAF4C001DAD23 /* MagicalRecord+Setup.m in Sources */,
 				C2B2087017FDAF4C001DAD23 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				C2B2087117FDAF4C001DAD23 /* MagicalRecord.m in Sources */,
+<<<<<<< HEAD
+=======
+				C2B2087617FDB058001DAD23 /* Assessments.m in Sources */,
+				C2B2087917FDB059001DAD23 /* Classes.m in Sources */,
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 				C2B2087D17FDB29D001DAD23 /* TimetableViewController.m in Sources */,
 				C2B2088017FDB2AC001DAD23 /* AssessmentsViewController.m in Sources */,
 				C2B2088317FDB2BB001DAD23 /* ScheduleViewController.m in Sources */,
 				C2B2088617FDB333001DAD23 /* WAMViewController.m in Sources */,
+<<<<<<< HEAD
 				C2DDC075180826200075A4BC /* AddSubjectViewController.m in Sources */,
 				C22A68611813D48100AFCBDE /* AddAssessmentViewController.m in Sources */,
 				C22A68641813D51E00AFCBDE /* AddClassViewController.m in Sources */,
@@ -532,6 +588,10 @@
 				949BF113181CF61E00E326B7 /* Session.m in Sources */,
 				949BF116181D0B1300E326B7 /* CurrentSessionViewController.m in Sources */,
 				949BF119181D216B00E326B7 /* CurrentSession.m in Sources */,
+=======
+				C2DDC072180822580075A4BC /* Subject.m in Sources */,
+				C2DDC075180826200075A4BC /* AddSubjectViewController.m in Sources */,
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

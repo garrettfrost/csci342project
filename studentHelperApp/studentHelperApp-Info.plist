@@ -38,10 +38,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+<<<<<<< HEAD
 	<key>UIAppFonts</key>
 	<array>
 		<string>DK Crayon Crumble.ttf</string>
 	</array>
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

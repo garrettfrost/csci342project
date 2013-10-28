@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #import "SubjectSelectionViewController.h"
 #import "SubjectViewController.h"
 
@@ -16,4 +17,9 @@
 @property(retain, nonatomic)NSMutableArray *subjects;
 
 - (IBAction)addButtonPressed:(id)sender;
+=======
+
+@interface ScheduleViewController : UITableViewController<UIActionSheetDelegate>
+
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 @end

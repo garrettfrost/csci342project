@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #import "SubjectSelectionViewController.h"
 #import "Subjects.h"
 #import "AddSubjectViewController.h"
@@ -19,6 +20,12 @@
 @property(retain, nonatomic)NSArray *classes;
 @property NSMutableArray *todaysClasses, *classArray;
 @property(retain, nonatomic)NSString *dayOfTheWeek;
+=======
+#import "AddSubjectViewController.h"
+
+@interface TimetableViewController : UITableViewController<UIActionSheetDelegate>
+
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 - (IBAction)addButtonPressed:(id)sender;
 
 @end

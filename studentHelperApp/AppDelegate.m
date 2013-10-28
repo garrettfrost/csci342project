@@ -44,8 +44,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+<<<<<<< HEAD
     
     [MagicalRecord cleanUp];
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 @end

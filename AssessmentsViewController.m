@@ -33,6 +33,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+<<<<<<< HEAD
     UIImageView *background = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Chalkboard-background.jpg"]];
     self.tableView.backgroundView = background;
     
@@ -49,6 +50,8 @@
         else
             [self.incomplete addObject:assess];
     }
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +60,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+<<<<<<< HEAD
 -(void)viewDidAppear:(BOOL)animated
 {
     self.complete = [[NSMutableArray alloc]init];
@@ -83,19 +87,35 @@
 {
     // Return the number of sections.
     return 2;
+=======
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+<<<<<<< HEAD
     // Return the number of rows in the section.
     if(section == 0)
         return [self.incomplete count];
     else
         return [self.complete count];
+=======
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+<<<<<<< HEAD
     static NSString *CellIdentifier = @"assessment";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
@@ -121,10 +141,17 @@
         cell.textLabel.text = assess.name;
         cell.detailTextLabel.text = [NSString stringWithFormat:@"Mark: %@/%@", assess.mark, assess.weighting];
     }
+=======
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     
     return cell;
 }
 
+<<<<<<< HEAD
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if(section == 0)
@@ -133,6 +160,8 @@
         return @"Complete";
 }
 
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -176,7 +205,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+<<<<<<< HEAD
     [self performSegueWithIdentifier:@"view_assessment_segue" sender:self];
+=======
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (void)createActionSheet
@@ -188,14 +227,21 @@
     NSString *other1 = @"Subject";
     NSString *other2 = @"Assessment";
     NSString *other3 = @"Class";
+<<<<<<< HEAD
     NSString *other4 = @"Current Session";
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     NSString *cancel = @"Cancel";
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
                                   initWithTitle:actionSheetTitle
                                   delegate:self
                                   cancelButtonTitle:cancel
                                   destructiveButtonTitle:nil
+<<<<<<< HEAD
                                   otherButtonTitles:other1, other2, other3, other4, nil];
+=======
+                                  otherButtonTitles:other1, other2, other3, nil];
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
@@ -204,6 +250,7 @@
 {
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     
+<<<<<<< HEAD
     if ([buttonTitle isEqualToString:@"Assessment"])
     {
         self.isAssessment = true;
@@ -259,4 +306,20 @@
 {
     [self createActionSheet];
 }
+=======
+    if ([buttonTitle isEqualToString:@"Subject"])
+    {
+        [self performSegueWithIdentifier:@"assessment_to_add_subject" sender:self];
+    }
+    else if ([buttonTitle isEqualToString:@"Assessment"])
+    {
+        [self performSegueWithIdentifier:@"assessment_to_add_assessment" sender:self];
+    }
+    else if([buttonTitle isEqualToString:@"Class"])
+    {
+        [self performSegueWithIdentifier:@"assessment_to_add_class" sender:self];
+    }
+}
+
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 @end

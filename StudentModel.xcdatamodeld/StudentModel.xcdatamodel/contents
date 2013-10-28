@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11G63b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Assessments" representedClassName="Assessments" syncable="YES">
         <attribute name="assID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -24,6 +25,25 @@
         <attribute name="currSession" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Subjects" representedClassName="Subjects" syncable="YES">
+=======
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Assessments" representedClassName="Assessments" syncable="YES">
+        <attribute name="due" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mark" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weighting" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <relationship name="assOwnedBySubject" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Subject" inverseName="assessmentRelationship" inverseEntity="Subject" syncable="YES"/>
+    </entity>
+    <entity name="Classes" representedClassName="Classes" syncable="YES">
+        <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classOwnedBySubject" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Subject" inverseName="classesRelationship" inverseEntity="Subject" syncable="YES"/>
+    </entity>
+    <entity name="Subject" representedClassName="Subjects" syncable="YES">
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
         <attribute name="completed" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="creditPoints" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="mark" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -34,9 +54,15 @@
         <relationship name="classesRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Classes" inverseName="classOwnedBySubject" inverseEntity="Classes" syncable="YES"/>
     </entity>
     <elements>
+<<<<<<< HEAD
         <element name="Assessments" positionX="160" positionY="192" width="128" height="165"/>
         <element name="Classes" positionX="160" positionY="192" width="128" height="165"/>
         <element name="Subjects" positionX="160" positionY="192" width="128" height="165"/>
         <element name="CurrentSession" positionX="160" positionY="192" width="128" height="60"/>
+=======
+        <element name="Assessments" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Classes" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Subject" positionX="160" positionY="192" width="128" height="165"/>
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     </elements>
 </model>

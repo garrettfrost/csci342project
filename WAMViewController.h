@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #import "SubjectSelectionViewController.h"
 #import "Session.h"
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 
 @interface WAMViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *sessionsWAMTable;
 @property (weak, nonatomic) NSArray *subjects;
+<<<<<<< HEAD
 @property bool isAssessment, isClass;
 @property (weak, nonatomic) IBOutlet UILabel *WAMText;
 @property (weak, nonatomic) IBOutlet UILabel *wamValueLabel;
@@ -23,4 +27,9 @@
 -(void) setUp;
 
 - (IBAction)addButtonPressed:(id)sender;
+=======
+
+-(double) calculateWAMWithSubjects : (NSArray *) subjects;
+
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 @end

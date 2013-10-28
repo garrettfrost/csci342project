@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+<<<<<<< HEAD
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -92,6 +93,16 @@
     else
         return @"Today's Timetable";
 }
+=======
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -102,21 +113,34 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+<<<<<<< HEAD
     // Return the number of sections.
     return 2;
+=======
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+<<<<<<< HEAD
     // Return the number of rows in the section.
     if(section == 0)
         return 1;
     else
         return self.classArray.count;
+=======
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+<<<<<<< HEAD
     NSArray *thisSession = [[NSArray alloc]init];
     thisSession = [CurrentSession MR_findAll];
     
@@ -164,10 +188,17 @@
             [needSession show];
         }
     }
+=======
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     
     return cell;
 }
 
+<<<<<<< HEAD
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
@@ -216,6 +247,46 @@
  return YES;
  }
  */
+=======
+/*
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+*/
+
+/*
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }   
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }   
+}
+*/
+
+/*
+// Override to support rearranging the table view.
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+{
+}
+*/
+
+/*
+// Override to support conditional rearranging of the table view.
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the item to be re-orderable.
+    return YES;
+}
+*/
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 
 #pragma mark - Table view delegate
 
@@ -239,14 +310,21 @@
     NSString *other1 = @"Subject";
     NSString *other2 = @"Assessment";
     NSString *other3 = @"Class";
+<<<<<<< HEAD
     NSString *other4 = @"Current Session";
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     NSString *cancel = @"Cancel";
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
                                   initWithTitle:actionSheetTitle
                                   delegate:self
                                   cancelButtonTitle:cancel
                                   destructiveButtonTitle:nil
+<<<<<<< HEAD
                                   otherButtonTitles:other1, other2, other3, other4, nil];
+=======
+                                  otherButtonTitles:other1, other2, other3, nil];
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
@@ -255,6 +333,7 @@
 {
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     
+<<<<<<< HEAD
     if ([buttonTitle isEqualToString:@"Assessment"])
     {
         self.isAssessment = true;
@@ -274,11 +353,25 @@
     else if([buttonTitle isEqualToString:@"Current Session"])
     {
         [self performSegueWithIdentifier:@"timetable_to_add_current_session_segue" sender:self];
+=======
+    if ([buttonTitle isEqualToString:@"Subject"])
+    {
+        [self performSegueWithIdentifier:@"timetable_to_add_subject" sender:self];
+    }
+    else if ([buttonTitle isEqualToString:@"Assessment"])
+    {
+        [self performSegueWithIdentifier:@"timetable_to_add_assessment" sender:self];
+    }
+    else if([buttonTitle isEqualToString:@"Class"])
+    {
+        [self performSegueWithIdentifier:@"timetable_to_add_class" sender:self];
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
     }
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+<<<<<<< HEAD
     if([segue.identifier isEqualToString:@"timetable_to_subject_select_segue"])
     {
         SubjectSelectionViewController *dest = segue.destinationViewController;
@@ -291,6 +384,8 @@
         AddSubjectViewController *dest = segue.destinationViewController;
         dest.hidesBottomBarWhenPushed = YES;
     }
+=======
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 }
 
 - (IBAction)addButtonPressed:(id)sender

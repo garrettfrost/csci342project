@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #import "Subjects.h"
+=======
+#import "Subject.h"
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 #import "CoreData+MagicalRecord.h"
 
 @interface AddSubjectViewController : UIViewController<UITextFieldDelegate, UIPickerViewDelegate>
@@ -27,6 +31,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *subjectCodeField;
 @property (weak, nonatomic) IBOutlet UITextField *creditPointsField;
 
+<<<<<<< HEAD
 @property (weak, nonatomic) IBOutlet UILabel *subjectNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subjectCodeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *creditPointsLabel;
@@ -34,6 +39,9 @@
 @property (retain, nonatomic) IBOutlet UIImageView *background;
 
 @property (weak, nonatomic) Subjects *subjectToAdd;
+=======
+@property (weak, nonatomic) Subject *subjectToAdd;
+>>>>>>> 6b506c976e0a13fb292fed003bada4e46250ded3
 
 - (IBAction)doneButtonPressed:(id)sender;
 @end
